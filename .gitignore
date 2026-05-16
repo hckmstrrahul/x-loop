@@ -1,29 +1,60 @@
 # dependencies
-node_modules
+node_modules/
 .pnp
 .pnp.js
 
-# next.js
+# next.js build output
 .next/
 out/
 build/
+dist/
 
-# misc
-.DS_Store
-*.pem
+# next.js generated
+next-env.d.ts
 
-# debug
+# turbopack / turbo cache
+.turbo/
+
+# typescript incremental
+*.tsbuildinfo
+
+# logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# local env files
-.env*.local
+# environment files — never commit any variant
 .env
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+.env.*
+!.env.example
 
 # vercel
 .vercel
+
+# coverage / test artifacts
+coverage/
+*.lcov
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# certificates and keys — defensive, never commit any of these
+*.pem
+*.key
+*.p12
+*.cer
+*.crt
+*.pfx
+
+# misc
+.cache/
+tmp/

@@ -16,7 +16,7 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'x/loop — reach telemetry for X creators',
   description:
-    'A creator workbench built on the open-sourced X For You algorithm. Pre-score drafts, check quote-safety, find tribe overlap, mine archetypes.',
+    'A creator workbench built on the open-sourced X For You algorithm. Pre-score drafts, check quote-safety, mine archetypes from your post history.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
