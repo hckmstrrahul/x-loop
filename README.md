@@ -1,8 +1,12 @@
 # x/loop
 
-Personal creator workbench built on the open-sourced X For You algorithm ([xai-org/x-algorithm](https://github.com/xai-org/x-algorithm)). Pre-score drafts against the Banger screen, check quote-safety contagion, mine archetypes from your post history.
+A creator workbench built on the [open-sourced X For You algorithm](https://github.com/xai-org/x-algorithm). Pre-score drafts against the Banger screen, check quote-safety contagion, mine archetypes from your post history.
 
-Single-user, BYOK (bring-your-own-key), no X API dependency. Runs locally or on a private Vercel deploy.
+- **Live:** https://x-loop-24gt2ufot-rahuls-projects-e625a0fb.vercel.app
+- **Source:** https://github.com/hckmstrrahul/x-loop
+- **License:** [PolyForm Noncommercial 1.0.0](./LICENSE) — source-available, free for noncommercial use, attribution required. Commercial use needs a separate license.
+
+BYOK (bring-your-own-key) — each visitor enters their own Grok / Claude / GPT / Gemini key in the app. Keys live only in the visitor's browser. No X API dependency. Runs locally or on Vercel.
 
 ## Three working tools
 
@@ -111,3 +115,23 @@ proxy.ts                     ← optional Basic Auth gate
 ## Boundaries
 
 Read `/boundaries` in the running app. No safety-classifier evasion, no coordinated abuse, no engagement inflation.
+
+## License
+
+Source-available under the [PolyForm Noncommercial License 1.0.0](./LICENSE).
+
+In plain English:
+
+- ✓ Read the code, run it locally, modify it, use it for personal or research purposes
+- ✓ Use it inside a noncommercial organization (educational, charitable, public-sector)
+- ✗ Bundle it into a paid product, sell access to it, or offer it as a hosted commercial service
+- ✗ Use it to build a competing commercial product
+- Attribution to the original author must be retained in any redistribution
+
+Want a commercial license? Open an issue on the repo or reach out directly.
+
+## Credits
+
+Algorithm reference and reproductions are based on the open-sourced [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm). The names "Banger screen", "Phoenix model", "Phoenix actions", "MediumRisk verdict", etc. come from that repository and are used here to keep terminology consistent with the source the tool is modelling.
+
+This project is unaffiliated with X Corp or xAI.
